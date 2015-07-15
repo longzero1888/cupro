@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "create your custom project",
   "main": "index.js",
+  "repository": "longzero1888/cupro",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
