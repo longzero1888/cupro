@@ -1,11 +1,16 @@
 {
   "name": "cupro",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "create your custom project",
-  "main": "index.js",
+  "bin": {
+    "cupro": "./bin/cupro"
+  },
   "repository": "longzero1888/cupro",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^1.0.0"
   },
   "author": "zhaolei",
   "license": "MIT"

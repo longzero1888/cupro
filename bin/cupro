@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+'use strict';
+var program = require('commander');
+
+program
+    .version('0.0.1')
+    .option('-c, --create', 'Create project')
+    .parse(process.argv);
+
+if (program.create) {
+    console.log('create successful');
+}else{
+    console.log('do nothing');
+}
