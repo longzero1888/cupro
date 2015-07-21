@@ -5,11 +5,11 @@ var environment = require('../lib/environment');
 var pkg = require('../package.json');
 
 program
-    .version('0.0.1')
-    .option('-v, --version', 'check version')
+    .version(pkg.version)
+    .option('-v, --versions', 'check version')
     .parse(process.argv);
 
-if (program.create) {
+if (program.versions) {
     console.log(pkg.version);
 } else {
     environment.lookup(program.args[0]);
