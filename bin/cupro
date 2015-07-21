@@ -14,31 +14,5 @@ if (program.versions) {
 } else {
     environment.lookup(program.args[0]);
 }
-//fs.readFile('cupro', 'utf-8', function (err, data) {
-//    console.log(err);
-//    console.log('123');
-//    console.log(data);
-//});
-//fs.open('cupro', 'w+', function (err, fd) {
-//    console.log(err);
-//    console.log(fd);
-//});
 
-//var spawn = require('child_process').spawn,
-//    ls    = spawn('lsss');
-//
-//ls.stdout.on('data', function (data) {
-//    console.log('stdout: ' + data);
-//});
-//
-//ls.stderr.on('data', function (data) {
-//    console.log('stderr: ' + data);
-//});
-//
-//ls.on('exit', function (code) {
-//    console.log('child process exited with code ' + code);
-//});
-
-//var path = require('path');
-//console.log(path);
 
