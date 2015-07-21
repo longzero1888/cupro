@@ -1,9 +1,10 @@
 {
   "name": "cupro",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "create your custom project",
   "files": [
-    "bin"
+    "bin",
+    "lib"
   ],
   "bin": {
     "cupro": "./bin/cupro"
