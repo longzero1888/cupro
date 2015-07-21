@@ -2,6 +2,9 @@
   "name": "cupro",
   "version": "1.0.3",
   "description": "create your custom project",
+  "files": [
+    "bin"
+  ],
   "bin": {
     "cupro": "./bin/cupro"
   },
@@ -10,7 +13,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "commander": "^1.0.0"
+    "commander": "^1.0.0",
+    "escape-string-regexp": "^1.0.3",
+    "globby": "^2.1.0",
+    "lodash": "^3.10.0",
+    "untildify": "^2.1.0"
   },
   "author": "zhaolei",
   "license": "MIT"

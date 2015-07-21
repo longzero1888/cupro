@@ -1,14 +1,44 @@
 #!/usr/bin/env node
 'use strict';
 var program = require('commander');
+var environment = require('../lib/environment');
+var pkg = require('../package.json');
 
 program
     .version('0.0.1')
-    .option('-c, --create', 'Create project')
+    .option('-v, --version', 'check version')
     .parse(process.argv);
 
 if (program.create) {
-    console.log('create successful');
-}else{
-    console.log('do nothing');
+    console.log(pkg.version);
+} else {
+    environment.lookup(program.args[0]);
 }
+//fs.readFile('cupro', 'utf-8', function (err, data) {
+//    console.log(err);
+//    console.log('123');
+//    console.log(data);
+//});
+//fs.open('cupro', 'w+', function (err, fd) {
+//    console.log(err);
+//    console.log(fd);
+//});
+
+//var spawn = require('child_process').spawn,
+//    ls    = spawn('lsss');
+//
+//ls.stdout.on('data', function (data) {
+//    console.log('stdout: ' + data);
+//});
+//
+//ls.stderr.on('data', function (data) {
+//    console.log('stderr: ' + data);
+//});
+//
+//ls.on('exit', function (code) {
+//    console.log('child process exited with code ' + code);
+//});
+
+//var path = require('path');
+//console.log(path);
+
