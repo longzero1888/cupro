@@ -1,6 +1,6 @@
 {
   "name": "cupro",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "create your custom project",
   "files": [
     "bin",
@@ -20,6 +20,6 @@
     "lodash": "^3.10.0",
     "untildify": "^2.1.0"
   },
-  "author": "zhaolei",
+  "author": "zhaolei,xuyanan",
   "license": "MIT"
 }

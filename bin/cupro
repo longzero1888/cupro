@@ -12,7 +12,7 @@ program
 if (program.versions) {
     console.log(pkg.version);
 } else {
-    environment.lookup(program.args[0]);
+    environment.lookup(program.args);
 }
 
 
