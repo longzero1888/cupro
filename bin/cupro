@@ -7,12 +7,18 @@ var pkg = require('../package.json');
 program
     .version(pkg.version)
     .option('-v, --versions', 'check version')
+    .option('-c, --create','create tpl')
     .parse(process.argv);
 
 if (program.versions) {
     console.log(pkg.version);
-} else {
-    environment.lookup(program.args);
+    return;
 }
+if (program.create){
+    environment.createTpl(program.args);
+    return;
+}
+environment.lookup(program.args);
+
 
 
