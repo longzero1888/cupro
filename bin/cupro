@@ -19,6 +19,3 @@ if (program.create){
     return;
 }
 environment.lookup(program.args);
-
-
-
